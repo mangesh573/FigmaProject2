@@ -1,0 +1,9 @@
+
+@mixin fonts($color: black, $fontSize: 64px, $fontWeight: 500, $lineHeight: 64px, $bg-color: unset) {
+    color: $color;
+    font-size: $fontSize;
+    font-style: normal;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    background-color: $bg-color;
+}

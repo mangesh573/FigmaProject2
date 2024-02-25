@@ -1,0 +1,501 @@
+
+.arrow {
+    background-color: white;
+    width: 53px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F2F2F2;
+
+    &:hover {
+        background-color: #F9F9F9;
+    }
+}
+
+.real-estate-app-left {
+    padding-top: 336px;
+    @include media-breakpoint-between(xs,xl){
+        padding: 0px;
+        margin-bottom: 30px; 
+    }
+   
+
+    h1 {
+        @include fonts(#BDBDBD, 64px, 300);
+
+        span {
+            @include fonts(#333, 64px, 700);
+        }
+    }
+}
+
+.banner-title {
+    gap: 90px;
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.left-margin {
+    margin-left: 128px;
+    @include media-breakpoint-between(xs,xl){
+        margin-left: unset;
+    }
+}
+
+
+.real-estate-app-right {
+    position: relative;
+
+    .banner-button {
+        @include fonts(#333, 12px, 400, 12px);
+        position: absolute;
+        width: 222px;
+        height: 71px;
+        bottom: 0px;
+        left: 0px;
+        background-color: #fff;
+        border: none;
+        padding: 30px 23px 29px 20px;
+
+    }
+}
+
+
+.real-estate-app-about-wrap {
+    margin-top: 120px;
+}
+
+.real-estate-app-about-inner {
+    background-color: #FBFBFB;
+    padding: 30px 70px 30px 100px;
+    gap: 30px;
+    @include media-breakpoint-up(xs){
+        padding: 30px 24px 30px 31px;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+    @include media-breakpoint-up(md){
+        padding: 30px 70px 30px 100px;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+    @include media-breakpoint-up(xl){
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+   @include media-breakpoint-up(xxl){
+        gap: 30px;
+        flex-direction: row;
+        align-items: unset;
+    }
+
+}
+
+.real-estate-app-about-inner-left {
+    width: 60%;
+    @include media-breakpoint-between(xs,lg){
+        width: 100%;
+        justify-content: center;
+        
+    }
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+
+    &:first-child {
+        margin-bottom: 30px;
+    }
+
+    &:last-child {
+        position: absolute;
+        top: 295px;
+        @include media-breakpoint-between(xs,xl){
+            position: static;
+        }
+    }
+}
+
+.about-img-3 {
+    max-width: 100%;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.real-estate-app-about-inner-right {
+    width: 40%;
+   
+    @include media-breakpoint-between(xs, xxl){
+        width: 100%;
+    }
+    h2 {
+        @include fonts(#BDBDBD, 64px, 300, 64px);
+        margin-bottom: 20px;
+        @include media-breakpoint-only(xs){
+            font-size: 50px;
+        }
+    }
+
+    p {
+        @include fonts(#000, 16px, 300, 25px);
+        margin-bottom:20px;
+    }
+}
+
+.read-more-button {
+    @include fonts(#333, 12px, 400, 12px, #fff);
+    width: 222px;
+    height: 71px;
+    border: none;
+    padding: 30px 23px 29px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.real-estate-app-main-wrap {
+    margin-top: 150px;
+    @include media-breakpoint-only(xs){
+        margin-top: 45px;
+    }
+
+    h2 {
+        @include fonts(#BDBDBD, 64px, 300, 64px);
+         @include media-breakpoint-between(xs, md){
+            font-size: 43px;
+            line-height: 46px;
+        }
+        @include media-breakpoint-down(sm){
+            font-size: 50px;
+        }
+    }
+}
+
+.real-estate-app-main-inner {
+    gap: 187px;
+    
+    @include media-breakpoint-between(xs, xl){
+        flex-direction:column;
+        gap: 0px;
+    }
+    @include media-breakpoint-between(xl, xxl){
+        flex-direction:row;
+        gap:187px ;
+    }
+    @include media-breakpoint-up(xxl){
+        flex-direction:row;
+        gap:140px ;
+    }
+
+    h3 {
+        @include fonts(#F2F2F2, 200px, 900, normal);
+        @include media-breakpoint-between(xs, md){
+            font-size: 135px;
+           line-height: 166px;
+        }
+    }
+
+    p {
+        @include fonts(#333, 22px, 400, 36px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include media-breakpoint-down(sm){
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+
+}
+
+.left-side-main {
+
+    gap: 30px;
+
+   
+}
+
+.right-side-main {
+   
+    gap: 30px;
+}
+
+.real-estate-app-ourproject-wrap {
+    margin-top: 120px;
+    @include media-breakpoint-only(xs){
+        margin-top: 50px;
+    }
+
+    h2 {
+        @include fonts(#BDBDBD, 64px, 300, 64px);
+        @include media-breakpoint-only(xs){
+            font-size: 50px;
+        }
+
+    }
+}
+
+.our-project-gap {
+    gap: 30px;
+   
+      @include media-breakpoint-between(xs, xl){
+        justify-content: center;
+      }
+}
+
+.our-project-title {
+    margin-bottom: 30px;
+}
+
+.ourproject-bg {
+
+    width: 100%;
+    max-width: 570px;
+    height: 255px;
+    background: url(../images/our-project-1.jpg), lightgray -1216.252px -531.647px / 442.727% 536.047% no-repeat;
+   
+    @include media-breakpoint-between(md, lg){
+        width: 570px;
+        height: 255px
+    }   
+
+    h3 {
+        @include fonts(#fff, 64px, 700, 64px);
+    }
+}
+
+.ourproject-inner-bg {
+    width: 100%;
+    max-width: 570px;
+    height: 255px;
+    padding: 48px 258px 47px 79px;
+    background: rgb(51, 51, 51, 0.8);
+@include media-breakpoint-between(md, xl) { 
+    width: 570px;
+    height: 255px;
+ }
+ @include media-breakpoint-down(sm){
+    padding:48px 50px 47px 79px ;
+ }
+
+    h3 {
+        @include fonts(#fff, 64px, 700, 64px);
+        margin-bottom: 10px;
+    
+    }
+}
+
+.ourproject-btn {
+    background-color: transparent;
+    @include fonts(#fff, 12px, 400, 12px);
+    letter-spacing: 2.4px;
+}
+
+.our-project-2 {
+    width: 570px;
+    height: 255px;
+}
+
+.all-project-button {
+    @include fonts(#fff, 12px, 400, 12px, #333);
+    width: 222px;
+    height: 71px;
+    border: none;
+    padding: 24px 40px 23px 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.real-estate-app-contact-us-wrap {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    @include media-breakpoint-only(xs){
+        margin-top: 50px;
+    }
+}
+
+.real-estate-app-contact-us-inner {
+    margin-bottom: 77px
+}
+
+.contact-us-title {
+    @include fonts(#BDBDBD, 64px, 300, 64px);
+    @include media-breakpoint-only(xs){
+        font-size: 50px;
+    }
+}
+
+
+.inputs-style {
+    @include fonts(#8D8D8D, 14px, 400, normal, #F3F3F3);
+    max-width: 391px;
+    width: 100%;
+    height: 46px;
+    border: none;
+    padding-left: 21px;
+    
+
+    &::placeholder {
+        color: #8D8D8D;
+      
+    }
+
+    &:last-child {
+        height: 145px;
+        padding-top: 10px;
+    }
+}
+
+.form-inputs-gap {
+    gap: 10px;
+}
+
+.contact-us-gap {
+    gap: 30px;
+
+}
+
+// project page css
+
+.projects-section {
+
+    .projects-header {
+        @include fonts(#BDBDBD, 64px, 300, 64px, -color)
+    }
+
+    .gallery-text {
+        @include fonts(#333, 64px, 700, 64px, -color)
+    }
+}
+
+.projects {
+    padding-top: 30px;
+    border-top: 1px solid #F2F2F2;
+    margin-top: 30px;
+    gap: 60px;
+    margin-bottom: 233px;
+}
+.project-inner-img{
+    max-width: 670px;
+}
+.project-inner-details {
+    background-color: #FBFBFB;
+    padding: 30px 70px 30px 30px;
+
+    h1 {
+        @include fonts(#BDBDBD, 40px, 300, normal, -color);
+        margin-bottom: 73px
+    }
+
+    p {
+        @include fonts(#000, 16px, 300, 25px, -color);
+        margin-bottom: 0px;
+    }
+
+    button {
+
+        @include fonts(#333, 12px, 400, 12px);
+        width: 222px;
+        height: 71px;
+        background-color: #fff;
+        border: none;
+        margin-top: 64px;
+        box-shadow: 0px 0px 7px #aaaaaa;
+
+        img {
+            margin-left: 5px;
+        }
+    }
+}
+
+// gallery-page css
+
+.gallery-section {
+    h1 {
+        @include fonts(#BDBDBD, 64px, 300, 64px, -color)
+    }
+
+    .gallery-text {
+        @include fonts(#333, 64px, 700, 64px, -color)
+    }
+}
+
+.gallery-img-gap {
+    gap: 30px;
+}
+
+.gallery-images {
+    padding-top: 30px;
+    border-top: 1px solid#F2F2F2;
+    margin-top: 30px;
+    margin-bottom: 233px;
+
+}
+
+// contact-page-css
+.contact-info-inner{
+    @include media-breakpoint-down(xl){
+        flex-direction: column
+    }
+}
+
+.contact-info-left {
+    h2 {
+        @include fonts(#BDBDBD, 64px, 300, 64px, -color);
+        margin-bottom:30px;
+        margin-top: 50px;
+    }
+
+    .contact-info-title {
+        @include fonts(#333, 64px, 700, 64px, -color)
+    }
+}
+.cont-info-company-name{
+    h3{
+        @include fonts(#333, 16px, 700, 22.53px, -color)   
+    }
+    p{
+      
+        @include fonts(#333333, 16px, 300, 22.53px, -color);
+        margin-bottom:30px;
+    }
+}
+.cont-info-number{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+.cont-info-email{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.Contact-us{
+    @include fonts(#fff, 16px, 300, 12px, #333);
+    width: 222px;
+    height: 71px;
+    border: none;
+    padding: 24px 40px 23px 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.contact-info-right{
+    @include media-breakpoint-down(xl){
+        padding-bottom: 60px;
+    }
+}
+

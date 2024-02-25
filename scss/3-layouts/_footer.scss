@@ -1,0 +1,92 @@
+
+.footer-bg-color {
+    background-color: #2C2C2C;
+}
+
+.footer-pt {
+    padding-top: 58px;
+  @include media-breakpoint-between(xs,md){
+    padding: 20px;
+  }
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        @include fonts(#fff, 16px, 700, normal);
+        margin-bottom: 25px
+        
+
+
+    }
+
+    a {
+        @include fonts(#fff, 14px, 500, 24px);
+        margin-bottom: 16px;
+        @include media-breakpoint-down(sm){
+        font-size: 11px
+        }
+    }
+   
+}
+
+.contact {
+    h2 {
+        @include fonts(#fff, 16px, 700, normal);
+        margin-bottom: 25px
+    }
+
+    a {
+        @include fonts(#fff, 14px, 500, 24px);
+        margin-bottom: 16px;
+        gap: 19px;
+        @include media-breakpoint-down(sm){
+            font-size: 11px
+            }
+
+        img {
+            align-self: flex-start;
+            margin-top: 5px;
+        }
+    }
+
+}
+
+.social-media {
+    @include media-breakpoint-down(sm){
+        width: 100%
+    }
+    h2 {
+        @include fonts(#fff, 16px, 700, normal);
+        margin-bottom: 25px
+    }
+
+    div {
+        gap: 40px;
+    }
+}
+
+.footer-bottom {
+    color: #fff;
+    text-align: center;
+    padding: 24px 0px 24px 0px;
+    border-top: 1px solid rgb(255, 255, 255, 0.1);
+    margin-top: 60px;
+
+    p {
+        margin: 0px;
+        @include fonts(unset, 12px, 400, 22px, -color);
+        color: rgba(200, 200, 200, 0.50);
+    }
+}
+
+@media(max-width: 991.98px) {
+    .gaps {
+        gap: 30px;
+    }
+    .navbar-collapse {
+        border-bottom: 1px solid black;
+    }
+}

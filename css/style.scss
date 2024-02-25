@@ -1,0 +1,17 @@
+// Responsive breakpoints
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// helpers
+@import '../scss/1-helpers/mixins';
+
+// basics
+@import '../scss/2-basics/base';
+
+// layouts
+
+@import '../scss/3-layouts/header';
+@import '../scss/3-layouts/main';
+@import '../scss/3-layouts/footer';
+
+
+
